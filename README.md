@@ -1,6 +1,6 @@
 Personal Project - 
 
-Juxt-A-Postion
+Juxt-A-Postion: A simple app using Strava API to collect cycling information gathered from Strava. This data you will compare your efforts agains a professional. Using the same distance, elevation difference, and milage of a ride against a Pro's who are also on Strava. Same ride segment does not have to be riden by the pro. Display charts and graphs to show how you stack up. Share results to fav. social media website.
 
 Monday : 
 	CSS/HTML
