@@ -1,0 +1,43 @@
+body, html  {
+  background: url("https://farm3.staticflickr.com/2902/14670471182_4e7298f4da_o.jpg")no-repeat center center  ;
+  background-size: cover;
+  height: 1000px;
+}
+.container  {
+  margin-top: 5.250em;
+  width: 30%;
+  height: 30%;
+}
+
+.navbar-brand {
+  margin-top: 9px;
+}
+
+.navbar-nav{
+  margin-top: 9px;
+}
+
+.btn {
+  background-color:  #FC4C02;
+}
+
+h1  {
+  text-align: center;
+  font-family: helvetica;
+  color: #fff;
+  font-size: 250%;
+  display: fixed;
+}
+
+h2  {
+  font-size: 350%;
+  color: #FC4C02;
+  text-align: center;
+}
+
+.navbar-form .form-control  {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35.125em;
+}
+
