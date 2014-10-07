@@ -3,18 +3,22 @@ Personal Project -
 Juxt-A-Postion
 
 Monday : 
+	CSS/HTML
 	create Sign up and login page.
-	create page once user has logged in.
+	Profile page - which also gets the activity to compare.
+	Compare against a pro page
 
 Tuesday:
-	authentication w/ firebase.
 	create routing between pages.
 
 Weds:
-	create comparing filters.
+	API and authentication
+	create filters.
 
 Thurs:
 	finish filters and or authentication.
+	graphs and charts.
 
 Friday:
-	CSS and making it look cute.
+	Filters and authentication.
+	Make it look cute.
