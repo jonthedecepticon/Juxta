@@ -1,35 +1,22 @@
-var app = angular.module('juxtaApp', ['firebase', 'ngRoute']);
+var app = angular.module('juxtaApp', ['ngRoute']);
 
 //app.run will go here.
 
-// app.config(function($routeProvider){
+app.config(function($routeProvider ){
+	// $httpProvider.interceptors.push('httpRequestInterceptor');
+
+	$routeProvider.when('/', {
+		templateUrl: 'loginCred.html',
+		controller: 'loginCtrl'
+	}).when('/Profile',{ 
+		templateUrl:'profileSegTemp.html'
+		// controller: ''
+	}).when('/Compare',{
+		templateUrl:'compareTemp.html'
+		// controller: ''
+	 }).otherwise({
+		redirectTo: '/'
+	})
 	
 
-// 	$routeProvider.when('/login',{
-// 		templateUrl: '/index.html',
-// 		controller: 'loginCtrl'
-// 	}).when('/threads/:threadId',{ //changed from .when('/threads'
-// 		templateUrl:'app/js/threads/threads.html',
-// 		controller: 'ThreadsCtrl',
-// 		resolve: {
-// 			threadsRef: function(ThreadService){
-// 				return ThreadService.getThreads();
-// 			}
-// 		}
-// 	}).when('/thread/:threadId',{
-// 		templateUrl:'app/js/threads/thread.html',
-// 		controller: 'threadCtrl',
-// 		resolve: {
-// 			threadRef: function(ThreadService, $stateParams){
-// 				return ThreadService.getThread($stateParams.threadId);
-// 			},
-// 			commentRef: function(ThreadService, $stateParams){
-// 				return ThreadService.getComments($stateParams.threadId);
-// 			}
-// 		}
-// 	 }).otherwise({
-// 		redirectTo: '/login'
-// 	})
-	
-
-// });
+});

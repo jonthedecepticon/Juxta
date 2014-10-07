@@ -1,9 +1,12 @@
-body  {
-  background: url('https://farm4.staticflickr.com/3907/14599450215_36f209a5b7_b.jpg') no-repeat  center fixed;
+body {
+/*  background: url('https://farm4.staticflickr.com/3907/14599450215_36f209a5b7_b.jpg') no-repeat center center fixed;
+*/  
+  background-repeat: none;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: 100%;
-  position: absolute;
 }
 
 .container  {
@@ -48,4 +51,14 @@ p {
   font-size: 89.5%;
   margin-top: 13%;
   margin-left: 21%;
+}
+
+.navbar-form .form-control{
+  display: inline-block;
+  width: 450px;
+
+}
+
+.form-group1  {
+  text-align: center;
 }
