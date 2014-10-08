@@ -8,12 +8,12 @@ app.config(function($routeProvider){
 	$routeProvider.when('/Home', {
 		templateUrl: 'loginCred.html',
 		controller: 'loginCtrl',
-		resolve: {
-			getBackground: function(mainCtrl){
-				debugger;
-			return mainCtrl.getBackground();
-			}
-		}
+		// resolve: {
+		// 	getBackground: function(mainCtrl){
+		// 		debugger;
+		// 	return mainCtrl.getBackground();
+		// 	}
+		// }
 	}).when('/Profile',{ 
 		templateUrl:'profileSegTemp.html'
 		// controller: ''

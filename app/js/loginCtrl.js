@@ -1,7 +1,6 @@
 var app = angular.module('juxtaApp');
 
-app.controller('loginCtrl', function($scope, $firebase){
-	// $scope.env = EnvironmentService.getEnv();//this will need to be changed
+app.controller('loginCtrl', function($scope, $firebase, mainService){ //pluggin stravaService
 
 	var FirebaseTokenGenerator = require("firebase-token-generator");
   	var tokenGenerator = new FirebaseTokenGenerator("0NHCoERpOHndC2vYlBWmEyOVhhHoQMa4kSyoeeWz");
@@ -17,4 +16,14 @@ app.controller('loginCtrl', function($scope, $firebase){
 		ref.unauth();
 
 	});
+
+	var getData = function(profile){
+		stravaService.loginWithStrava().then(function(data){
+			var mainData = data.data.results;
+		});
+	}
+
+
+
 });
+
