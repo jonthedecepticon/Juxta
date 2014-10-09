@@ -2,21 +2,15 @@ var app = angular.module('juxtaApp', ['ngRoute']);
 
 //app.run will go here.
 
-app.config(function($routeProvider){
+app.config(function($httpProvider, $routeProvider, $locationProvider){
 	// $httpProvider.interceptors.push('httpRequestInterceptor');
 
 	$routeProvider.when('/Home', {
 		templateUrl: 'loginCred.html',
-		controller: 'loginCtrl',
-		// resolve: {
-		// 	getBackground: function(mainCtrl){
-		// 		debugger;
-		// 	return mainCtrl.getBackground();
-		// 	}
-		// }
+		controller: 'loginCtrl'
 	}).when('/Profile',{ 
-		templateUrl:'profileSegTemp.html'
-		// controller: ''
+		templateUrl:'profileSegTemp.html',
+		controller: 'profileCtrl'
 	}).when('/Compare',{
 		templateUrl:'compareTemp.html'
 		// controller: ''

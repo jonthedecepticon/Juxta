@@ -1,18 +1,13 @@
  var app = angular.module('juxtaApp');
 
- app.service('mainService', function($scope, $firebase, $http, $q){
+ app.service('stravaService', function($http){
 
-  this.loginWithStrava = function(profile){
-       var deferred = $q.defer();
-        $http({
-      method: 'GET',
-      url: 'https://www.strava.com/oauth/authorize?client_id=3221' 
-    }).then(function(data){
-      var mainData = data.data.results;
-      deferred.resolve(mainData);
-     })
-     return deferred.promise;
-    }
+  this.loginWithStrava = function(code){
+    return $http({
+      method: 'POST',
+      url: 'http://localhost:8081/get_auth_token?code=' + code
+    })
+  }
 });
 
   

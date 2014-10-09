@@ -1,9 +1,12 @@
 <div>
   <form class="navbar-form navbar" role="search">
     <div class="form-group1">
-      <input type="text" class="form-control"  placeholder="Select an activity to compare against a pro:" >
+      <input type="text" class="form-control"  placeholder="Select an activity to see your progression:" >
       <button class="btn btn-primary"> Compare </button> <!-- This will display and filter user's activities for them to select to compare against a pro --> 
     </div>
   </form>
+</div>
+<div class='outter' ng-controller="profileCtrl">
+	<div class="inner"><h3>Athlete: {{athlete.data}}</h3></div>
 </div>
 <!-- <div class="signOut"><h5>Sign Out</h5></div> -->

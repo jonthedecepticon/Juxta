@@ -78,7 +78,8 @@ p {
 
 .navbar-form .form-control{
   display: inline-block;
-  width: 450px;
+  margin-left: 0px;
+  width: 550px;
   -moz-box-shadow: 10px 10px 14px #000000;
   -webkit-box-shadow: 10px 10px 14px #000000;
   box-shadow: 10px 10px 14px #000000;
@@ -86,4 +87,14 @@ p {
 
 .form-group1  {
   text-align: center;
+}
+.outter {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+}
+.inner  {
+  border-bottom: 1px solid black ;
+  width: 500px;
+  height: 200px;
 }
