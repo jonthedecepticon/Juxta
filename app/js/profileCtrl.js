@@ -1,14 +1,17 @@
 var app = angular.module('juxtaApp');
 
-app.controller('profileCtrl', function($rootScope, $routeParams, $route, $location, stravaService){
+app.controller('profileCtrl', function($scope, $routeParams, $route, $location, stravaService){
 
     if($routeParams.code){
             stravaService.loginWithStrava($routeParams.code)
             .then(function(data){
-                console.log(data);
+                var theData = data;
+                $scope.athlete = theData
+                console.log($scope.athlete)
+
             })
+
         }
-        
 
     // var getData = function(profile){
     //  stravaService.loginWithStrava().then(function(data){

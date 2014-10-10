@@ -12,7 +12,7 @@ app.use(function(req, res, next) {
 app.post('/get_auth_token', function(req, res) {
 	var request = require('request');
 	var code = req.param('code');
-	request.post('https://www.strava.com/oauth/token?client_id=3221&client_secret=74bb40dddbffb3369fed081ad257545b6961d135&code=' + code, function (error, response, body) {
+	request.post('https://www.strava.com/oauth/token?client_id=3221&client_secret=b139c47e8f8e2d8865708a9eb2e8e0dbbb2c02ff&code=' + code, function (error, response, body) {
 	 	if (!error && response.statusCode == 200) {
 	    	return res.json(JSON.parse(body));
 	 	}
