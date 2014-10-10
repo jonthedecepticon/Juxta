@@ -1,23 +1,55 @@
-<div>
-  <form class="navbar-form navbar" role="search">
-    <div class="form-group1">
-      <input type="text" class="form-control"  placeholder="Select an activity to see your progression:" >
-      <button class="btn btn-primary"> Compare </button> <!-- This will display and filter user's activities for them to select to compare against a pro --> 
-    </div>
-  </form>
+<div class='outter-profile' ng-controller="profileCtrl">
+	<h3>Profile:</h3>
+		<h4><b>Name:</b> {{athlete.athlete.firstname}} {{athlete.athlete.lastname}} </h4>
+		<h4><b>Country:</b> {{athlete.athlete.country}}</h4>
+		<h4><b>State:</b> {{athlete.athlete.state}}</h4>
+		<h4><b>City:</b> {{athlete.athlete.city}}</h4>
+</div>	
+<div class="inner-stats">
+	<h3>My Stats:</h3>
+		<h4><strong>Last 4 Weeks</strong></h4>
+		<h4><b>Avg Ride / Week:</b> {{activity.firstname}}</h4>
+		<h4><b>Avg Distance / Week:</b> {{activity.country}}</h4>
+		<h4><b>Avg Time / Week:</b> {{activity.state}}</h4>
+		<h4><strong>Year-to-date</strong></h4>
+		<h4><b>Distance:</b> {{activity.city}}</h4>
+		<h4><b>Time:</b> {{activity.city}}</h4>
+		<h4><b>Elev Gain:</b> {{activity.city}}</h4>
+		<h4><b>Rides:</b> {{activity.city}}</h4>
+		<h4><strong>All-Time</strong></h4>
+		<h4><b>Distance:</b> {{activity.city}}</h4>
+		<h4><b>Rides:</b> {{activity.city}}</h4>
+		<h4><b>Furthest Ride:</b> {{activity.city}}</h4>
+		<h4><b>Biggest Climb:</b> {{activity.city}}</h4>
 </div>
-<div class='outter' ng-controller="profileCtrl">
-	<div class="inner">
-	
-	
-	<h3>Name: {{athlete.firstname}} {{athlete.lastname}} </h3>
-
-	<h3>Country: {{athlete.country}}</h3>
-
-	<h3>State: {{athlete.state}}</h3>
-
-	<h3>City: {{athlete.city}}</h3>
-
-	</div>
+<div class="gear">
+	<h3>Gear:</h3>
+		<h4><strong>Bike(s)</strong></h4>
+		<h4><b>Road or Mountain:</b> {{athlete.athlete.bikes1.0.name}}</h4>
+		<h4><b>Brand(s):</b> {{athlete.athlete.bikes.0.id}}</h4>
+		<h4><b>Bike Name(s):</b> {{athlete.athlete.bikes.0.name}}</h4>
+		<h4><b>Weight:</b> {{athlete.athlete.bike}}</h4>
+		<h4><b>Milage:</b> {{athlete.athlete.bikes.0.distance}}</h4>
+	<h3>Clubs:</h3>
+		<h4><b></b>{{athlete.athlete.clubs.0.name}}</h4>
+		<h4><b></b>{{athlete.athlete.clubs.1.name}}</h4>
+		<h4><b></b>{{athlete.athlete.clubs.2.name}}</h4>
+		<h4><b></b>{{athlete.athlete.clubs.3.name}}</h4>
+		<h4><b></b>{{athlete.athlete.clubs.4.name}}</h4>
+		<h4><b></b>{{athlete.athlete.clubs.5.name}}</h4>
+</div>
+	<div>
+	<form class="navbar-form navbar" role="search">
+		<div class="form-group1">
+			<input type="text" class="form-control"  placeholder="Select an activity to see your progression:" >
+			<button class="btn btn-primary"> Select </button> <!-- This will display and filter user's activities for them to select to compare against a pro --> 
+		</div>
+	</form>
+<div class="activities-container" ng-controller="profileCtrl">
+	<div class="activ"><h4><b></b>{{athlete.data.0.average_speed}}</h4></div>
+	<div class="activ"></div>
+	<div class="activ"></div>
+	<div class="activ"></div>
+</div>
 </div>
 <!-- <div class="signOut"><h5>Sign Out</h5></div> -->

@@ -41,6 +41,7 @@ h1  {
 h3  {
   color: #FC4C02;
   text-shadow:5px 7px 4px #000000;
+
 }
 
 h2  {
@@ -49,10 +50,13 @@ h2  {
   background-color: rgba(0, 0, 0, 0.2);
   text-shadow:5px 10px 4px #000000;
   color: #fff;
+  font-size: 28px;
   margin-left: 350px;
   margin-right: 391px;
 }
 .btn {
+    margin-top: 25px;
+
   background-color:  #FC4C02;
   -moz-box-shadow: 10px 10px 14px #000000;
   -webkit-box-shadow: 10px 10px 14px #000000;
@@ -77,9 +81,10 @@ p {
 }
 
 .navbar-form .form-control{
+  margin-top: 25px;
   display: inline-block;
   margin-left: 0px;
-  width: 550px;
+  width: 50.111em;
   -moz-box-shadow: 10px 10px 14px #000000;
   -webkit-box-shadow: 10px 10px 14px #000000;
   box-shadow: 10px 10px 14px #000000;
@@ -88,13 +93,57 @@ p {
 .form-group1  {
   text-align: center;
 }
-.outter {
-  border: 1px solid black;
-  width: 500px;
-  height: 500px;
+
+ h4 {
+  color: white;
 }
-.inner  {
-  border-bottom: 1px solid black ;
-  width: 500px;
-  height: 200px;
+.outter-profile {
+  margin-left: 8.5%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-top: 1px solid black; 
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  width: 25%;
+  height: 500px;
+  display: inline-block;
+  float: left;
+}
+
+.inner-stats  {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  /*border-right: 1px solid black;*/
+  width: 23%;
+  height: 500px;
+  display: inline-block;
+  float: left;
+}
+.gear {
+  background-color: rgba(0, 0, 0, 0.55);
+  border-top: 1px solid black; 
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  width: 35%;
+  height: 500px;
+  display: inline-block;
+  float: left;
+}
+
+b   {
+  margin-left: 25px;
+  color: gray;
+}
+strong  {
+  margin-left: 10px;
+}
+
+.activ  {
+  background-color: rgba(0, 0, 0, 0.65);
+  border: 1px solid black;
+  width: 15%;
+  height: 50px;
+  display: inline-block;
+  float: left;
+
 }
